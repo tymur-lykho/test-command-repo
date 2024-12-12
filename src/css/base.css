@@ -76,12 +76,12 @@ body {
 }
 
 /* Start how-it-work to your-order */
-.sections {
+.section {
   padding-top: 80px;
   padding-bottom: 80px;
 }
 @media only screen and (min-width: 768px) {
-  .sections {
+  .section {
     padding-top: 100px;
     padding-bottom: 100px;
   }
