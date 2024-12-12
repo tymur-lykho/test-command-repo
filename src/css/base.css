@@ -13,6 +13,8 @@
 body {
   font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
+
+  margin: 0;
 }
 
 /* COMMON STYLES */
@@ -33,4 +35,54 @@ body {
 
 .hide {
   display: none;
+}
+
+/* title for vegetables, reviews and your order  */
+.title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+}
+/* Styles for title for vegetables, reviews and your order in Tablet/PC devices */
+@media only screen and (min-width: 768px) {
+  .title {
+    font-size: 64px;
+    line-height: 1;
+
+    margin-bottom: 24px;
+  }
+}
+
+/* only red buttons */
+.btn {
+  min-width: 157px;
+  min-height: 52px;
+  border-radius: 30px;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+
+  background-color: var(--color-primary-brand);
+
+  transition: 250ms ease-in-out;
+  transition-property: color, background-color;
+}
+
+/* Start how-it-work to your-order */
+.sections {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+@media only screen and (min-width: 768px) {
+  .sections {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
