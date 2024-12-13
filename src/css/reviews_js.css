@@ -5,11 +5,6 @@
   max-width: 335px;
   color: #141414;
 }
-@media only screen and (min-width: 768px) {
-  .reviews-title {
-    max-width: 553px;
-  }
-}
 .reviews-subtitle {
   max-width: 335px;
   font-size: 14px;
@@ -17,53 +12,15 @@
   color: #141414;
   margin-bottom: 40px;
 }
-@media only screen and (min-width: 768px) {
-  .reviews-subtitle {
-    max-width: 553px;
-    font-size: 16px;
-    line-height: 125%;
-    margin-bottom: 52px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .reviews-list {
-    display: flex;
-    gap: 24px;
-  }
-}
 .reviews-item {
   border: 1px solid #d4bfc4;
   border-radius: 24px;
   padding: 20px 16px;
   width: 335px;
 }
-@media only screen and (min-width: 768px) {
-  .reviews-item {
-    padding: 20px;
-    width: 340px;
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .reviews-item {
-    width: 344px;
-  }
-}
-
 .reviews-item:not(:first-child) {
   display: none;
 }
-
-@media only screen and (min-width: 768px) {
-  .reviews-item:not(:last-child) {
-    display: block;
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .reviews-item:last-child {
-    display: block;
-  }
-}
-
 .reviews-img {
   margin: 0 auto 24px;
 }
@@ -83,19 +40,6 @@
   text-align: center;
   color: #858585;
 }
-@media only screen and (min-width: 768px) {
-  .reviews-text {
-    font-size: 16px;
-    line-height: 125%;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .reviews-icon {
-    display: none;
-  }
-}
-
 .reviews-dots {
   display: flex;
   gap: 20px;
@@ -119,14 +63,47 @@
   background-color: #576f35;
 }
 
-@media only screen and (max-width: 1279px) {
-  .dot {
+@media only screen and (min-width: 768px) {
+  .reviews-title {
+    max-width: 553px;
+  }
+  .reviews-subtitle {
+    max-width: 553px;
+    font-size: 16px;
+    line-height: 125%;
+    margin-bottom: 52px;
+  }
+  .reviews-list {
+    display: flex;
+    gap: 24px;
+  }
+  .reviews-item {
+    padding: 20px;
+    width: 340px;
+  }
+  .reviews-item:not(:last-child) {
     display: block;
+  }
+  .reviews-text {
+    font-size: 16px;
+    line-height: 125%;
   }
 }
 
 @media only screen and (min-width: 1280px) {
+  .reviews-item {
+    width: 344px;
+  }
+  .reviews-item:last-child {
+    display: block;
+  }
   .dot {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 1279px) {
+  .dot {
+    display: block;
   }
 }
