@@ -1,0 +1,222 @@
+.your-order {
+    width: 100%;
+    background-color: #576f35;
+}
+.your-order-container {
+    padding: 80px 20px;
+    
+}
+.title-container {
+    width: 100%;
+    margin-bottom: 40px;
+    
+}
+.your-order-title {
+    color: #fbfbfb;
+    width: 100%;
+}
+.title-span {
+    color: #d4bfc4;
+}
+.your-order-text {
+    font-size: 14px;
+    line-height: 1.43;
+    color: #fbfbfb;
+    
+    width: 100%;
+}
+.form-container {
+    border-radius: 30px;
+    padding: 40px 20px;
+    width: 100%;
+    background-color: #fbfbfb;
+    margin: 0 auto 20px;
+}
+.form-title {
+    font-size: 28px;
+    color: #141414;
+    margin-bottom: 40px;
+    width: 100%;
+}
+.from-us {
+    color: #7a3145;
+}
+.the-form {
+    color: #576f35;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.form-input {
+    outline: none;
+    font-family: inherit;
+    border: 1px solid #858585;
+    border-radius: 30px;
+    padding: 14px 16px;
+    width: 100%;
+    height: 48px;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #141414;
+    margin-bottom: 16px;
+    transition: border-color 250ms ease-in-out;
+}
+.form-input::placeholder {
+    color: #141414;
+}
+
+.comment-input {
+    height: 92px;
+    border-radius: 15px;
+    overflow-x: hidden;
+    margin-bottom: 20px;
+}
+
+.form-input:focus {
+    border-color: #7a3145;
+}
+.form-input.success {
+    border-color: #3cbc81;
+}
+.form-input.error {
+    border-color: #e74a3b;
+}
+
+.form-btn {
+    width: 100%;
+    padding: 16px auto;
+    color: #fbfbfb;   
+}
+.img-container {
+    background-color: #7a3145;
+    border-radius: 30px;
+    padding: 40px 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+.img-box {
+    border-radius: 15px;
+    width: 100%;
+    height: 272px;
+    margin-bottom: 20px;
+    background: rgba(20, 20, 20, 0.2);
+}
+.img-container-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #d4bfc4;
+    margin-bottom: 16px;
+}
+.img-container-social-media {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+.img-container-social-media li {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.11;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #fbfbfb;
+}
+.img-container-social-media a {
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .your-order-container {
+        padding: 100px 32px;
+    }
+    .title-container {
+        width: 640px;
+        margin-bottom: 52px;
+    }
+    
+    .your-order-text {
+        font-size: 16px;
+        line-height: 1.25;
+        
+    }
+    .form-container {
+        padding: 72px 100px;
+        width: 640px;        
+        margin-bottom: 32px;
+    }
+    .form-title {
+        font-size: 32px;
+        margin-bottom: 52px;
+        width: 440px;
+    }    
+    .form-input {
+        height: 52px;
+        font-size: 16px;
+        line-height: 1.25;
+    }       
+    .comment-input {
+        height: 96px;
+        margin-bottom: 24px;
+    }   
+
+    .img-container {
+        padding: 52px;
+        width: 640px;
+    }
+    
+    .img-box {
+        height: 316px;
+        margin-bottom: 52px;
+    }
+    
+    .img-container-text {
+        font-size: 16px;
+        line-height: 1.25;
+    }
+    .img-container-social-media {
+        gap: 12px;
+        flex-wrap: nowrap;
+    }
+}
+
+
+@media (min-width: 1280px) {
+    .your-order-container {
+        padding: 100px 100px;
+    }
+    .title-container {
+        width: 751px;
+        margin-bottom: 52px;
+    }    
+    .form-container {
+        box-sizing: border-box;
+        display: inline-block;
+        vertical-align: top;
+        border: none;
+        padding: 52px 48px;
+        width: 524px;
+        margin: 0 28px 0 0;
+    }
+    
+    .form-title {
+        font-size: 32px;
+        
+        width: 428px;
+    }    
+    .img-container {
+        box-sizing: border-box;
+        display: inline-block;
+        vertical-align: top;
+        border: none;
+        padding: 52px 48px;
+        width: 524px;
+        margin: 0;
+    }
+    .img-box {
+        height: 352px;
+        margin-bottom: 80px;
+    }
+}
