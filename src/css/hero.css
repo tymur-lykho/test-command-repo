@@ -1,0 +1,98 @@
+/* #region Hero */
+
+.section-hero {
+  position: relative;
+  padding: 100px 0px 412px 0px;
+  max-width: 375px;
+  margin: 0 auto;
+  background-color: #576f35;
+
+  background-image: url(/img/hero/pic-mob@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  color: var(--color-white-text);
+}
+
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .section-hero {
+    background-image: url(/img/hero/pic-mob@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-hero {
+    max-width: 768px;
+    padding: 120px 0px 588px 0px;
+    background-image: url(/img/hero/pic-tab@1x.jpg);
+  }
+  @media screen and (min-width: 768px) and (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section-hero {
+      background-image: url(/img/hero/pic-tab@2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section-hero {
+    max-width: 1280px;
+    padding: 232px 0px 52px 0px;
+    background-image: url(/img/hero/pic-desk@1x.jpg);
+    background-size: 640px 796px;
+    background-position: right;
+  }
+  @media screen and (min-width: 1280px) and (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section-hero {
+      background-image: url(/img/hero/pic-desk@2x.jpg);
+    }
+  }
+}
+
+.hero-title {
+  max-width: 335px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-title {
+    max-width: 704px;
+    margin-bottom: 24px;
+    font-size: 76px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero-title {
+    max-width: 502px;
+    margin-bottom: 128px;
+  }
+}
+
+.hero-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    max-width: 603px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero-text {
+    max-width: 472px;
+  }
+}
+/* #endregion Hero */
