@@ -1,0 +1,58 @@
+/* advertisement */
+.advertisement {
+  padding: 80px 0;
+}
+.advertisement-text {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: black;
+  min-width: 335px;
+}
+.advertisement-slogan {
+  color: #fbfbfb;
+  background-color: #576f35;
+  display: flex;
+  border-radius: 12px;
+}
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+  .advertisement {
+    padding: 100px 0;
+  }
+  .advertisement-text {
+    color: black;
+    min-width: 704px;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+  }
+  .advertisement-slogan {
+    min-height: 86px;
+    align-items: flex-end;
+  }
+}
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 0 100px;
+  }
+  .advertisement-text {
+    color: black;
+    min-width: 1054px;
+    font-size: 76px;
+    line-height: 1;
+  }
+  .advertisement-slogan {
+    align-items: center;
+    display: inline;
+  }
+}
