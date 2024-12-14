@@ -1,0 +1,345 @@
+.section {
+   
+}
+
+
+/* #region container */
+/* Styles for Mobile devices */
+.container {
+    min-width: 320px;
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  /* Styles for Tablet devices */
+  @media only screen and (min-width: 768px) {
+    .container {
+      max-width: 768px;
+      padding: 0 32px;
+    }
+  }
+  /* Styles for Desktop devices */
+  @media only screen and (min-width: 1280px) {
+    .container {
+      max-width: 1280px;
+      padding: 0 100px;
+    
+    }
+}
+/* #endregion */ 
+
+/* #region container-works */
+/* Styles for Mobile devices */
+.container-works {
+    display: flex;
+  
+    
+  }
+  /* Styles for Tablet devices */
+  @media only screen and (min-width: 768px) {
+    .container-works  {
+      
+    }
+  }
+  /* Styles for Desktop devices */
+  @media only screen and (min-width: 1280px) {
+    .container-works  {
+      display: flex;
+
+      
+    }
+}
+/* #endregion */ 
+
+/* #region works-caption  */
+
+/* Styles for Mobile devices */
+.works-caption {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+    white-space: nowrap;
+}
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+  .works-caption {
+  }
+}
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1280px) {
+  .works-caption {
+  }
+}
+/* #endregion */
+
+/* #region works-img  */
+
+/* Styles for Mobile devices */
+.works-img {
+    padding: 40px 10px;
+background: #7a3145;
+display: flex; 
+    justify-content: center; 
+    align-items: center; 
+
+}
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+    .works-img {
+    }
+}
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1280px) {
+    .works-img {
+    }
+}
+/* #endregion */
+
+/* #region works-img-jpg */
+
+/* Styles for Mobile devices */
+.works-img-jpg {
+    border-radius: 30px;
+    width: 335px;
+    height: 452px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/section1/pic\ mobileSEC2MOB@1x.jpg ); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #2E2F42;
+ 
+
+}
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+    .works-img-jpg {
+width: 640px;
+height: 640px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/section1/pic\ desktopSEC2DES@2x.jpg ); 
+    }
+}
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1280px) {
+    .works-img-jpg {
+    }
+}
+/* #endregion */
+
+/* #region works-box-box */
+
+/* Styles for Mobile devices */
+.works-box-box {
+    
+    background: #576f35;
+    display: flex; /* Вмикаємо flexbox */
+    justify-content: center; /* Горизонтальне вирівнювання */
+    align-items: center; /* Вертикальне вирівнювання */
+   
+}
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+    .works-box-box {
+      
+    }
+}
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1280px) {
+    .works-box-box {
+    }
+}
+/* #endregion */
+
+/* #region works-box */
+
+/* Styles for Mobile devices */
+.works-box {
+    padding: 80px 20px;
+    max-width: 335px;
+    
+}
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+    .works-box {
+        max-width: 440px;
+
+    }
+}
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1280px) {
+    .works-box {
+        
+    }
+}
+/* #endregion */
+
+/* #region works-title  */
+
+/* Styles for Mobile devices */
+.works-title {
+    font-weight: 600;
+font-size: 28px;
+line-height: 100%;
+letter-spacing: -0.01em;
+text-transform: uppercase;
+color: #fbfbfb;
+margin-bottom: 20px;
+}
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+    .works-title {
+    }
+}
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1280px) {
+    .works-title {
+    }
+}
+/* #endregion */
+
+/* #region works-span  */
+
+/* Styles for Mobile devices */
+.works-span {
+    color: #d4bfc4;
+}
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+    .works-span {
+    }
+}
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1280px) {
+    .works-span {
+    }
+}
+/* #endregion */
+
+/* #region works-paragraf */
+
+/* Styles for Mobile devices */
+.works-paragraf {
+    font-weight: 500;
+font-size: 14px;
+line-height: 143%;
+color: #fbfbfb;
+margin-bottom: 40px;
+}
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+    .works-paragraf {
+    }
+}
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1280px) {
+    .works-paragraf {
+    }
+}
+/* #endregion */
+
+/* #region works-list  */
+
+/* Styles for Mobile devices */
+.works-list {
+    list-style: none;
+    padding: 0;
+    counter-reset: step-counter;  
+}
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+    .works-list {
+    }
+}
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1280px) {
+    .works-list {
+    }
+}
+/* #endregion */
+
+/* #region works-item  */
+
+/* Styles for Mobile devices */
+.works-item {
+    border-radius: 15px;
+    padding: 12px 27px 12px 24px;
+    background: #fbfbfb;
+    margin-bottom: 20px;
+    position: relative; 
+}
+
+.works-item::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 52px;
+    height: 52px;
+    background-color: #D4BFC4; /* колір */
+    border-radius: 50%; /* Робить круг */
+    z-index: 0; /* Розташування позаду */
+    margin-left: 24px;
+}
+
+.works-item::after{
+    background-color: #7a3145; /* колір */
+    width: 42px;
+    height: 42px;
+    content: counter(step-counter); /* Вставляємо номер */
+    counter-increment: step-counter; /* Збільшуємо лічильник */
+    position: absolute;
+    left: 5px; /* Центруємо в зеленому крузі */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff; /* Колір тексту */
+    font-weight: bold;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* Робить круг */
+    z-index: 1; /* Розташування поверх зеленого круга */
+    border-radius: 100%;
+    margin-left: 24px;
+}
+
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+    .works-item {
+    }
+}
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1280px) {
+    .works-item {
+    }
+}
+/* #endregion */
+
+/* #region works-paragraf-par  */
+
+/* Styles for Mobile devices */
+.works-paragraf-par {
+    font-weight: 500;
+font-size: 14px;
+line-height: 143%;
+color: #858585;
+margin-left: 100px;
+}
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+    .works-paragraf-par {
+    }
+}
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1280px) {
+    .works-paragraf-par {
+    }
+}
+/* #endregion */
+
+/* #region works-paragraf-par-span  */
