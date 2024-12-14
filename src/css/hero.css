@@ -7,7 +7,12 @@
   margin: 0 auto;
   background-color: #576f35;
 
-  background-image: url(/img/hero/pic-mob@1x.jpg);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(20, 20, 20, 0.2),
+      rgba(20, 20, 20, 0.2)
+    ),
+    url(/img/hero/pic-mob@1x.jpg);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
@@ -16,7 +21,12 @@
 
 @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .section-hero {
-    background-image: url(/img/hero/pic-mob@2x.jpg);
+    background-image: linear-gradient(
+        to bottom,
+        rgba(20, 20, 20, 0.2),
+        rgba(20, 20, 20, 0.2)
+      ),
+      url(/img/hero/pic-mob@2x.jpg);
   }
 }
 
@@ -24,12 +34,22 @@
   .section-hero {
     max-width: 768px;
     padding: 120px 0px 588px 0px;
-    background-image: url(/img/hero/pic-tab@1x.jpg);
+    background-image: linear-gradient(
+        to bottom,
+        rgba(20, 20, 20, 0.2),
+        rgba(20, 20, 20, 0.2)
+      ),
+      url(/img/hero/pic-tab@1x.jpg);
   }
   @media screen and (min-width: 768px) and (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .section-hero {
-      background-image: url(/img/hero/pic-tab@2x.jpg);
+      background-image: linear-gradient(
+          to bottom,
+          rgba(20, 20, 20, 0.2),
+          rgba(20, 20, 20, 0.2)
+        ),
+        url(/img/hero/pic-tab@2x.jpg);
     }
   }
 }
@@ -38,14 +58,24 @@
   .section-hero {
     max-width: 1280px;
     padding: 232px 0px 52px 0px;
-    background-image: url(/img/hero/pic-desk@1x.jpg);
-    background-size: 640px 796px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(20, 20, 20, 0.2),
+        rgba(20, 20, 20, 0.2)
+      ),
+      url(/img/hero/pic-desk@1x.jpg);
+
     background-position: right;
   }
   @media screen and (min-width: 1280px) and (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .section-hero {
-      background-image: url(/img/hero/pic-desk@2x.jpg);
+      background-image: linear-gradient(
+          to bottom,
+          rgba(20, 20, 20, 0.2),
+          rgba(20, 20, 20, 0.2)
+        ),
+        url(/img/hero/pic-desk@2x.jpg);
     }
   }
 }
@@ -83,7 +113,6 @@
 
 @media screen and (min-width: 768px) {
   .hero-text {
-    font-weight: 500;
     font-size: 16px;
     line-height: 1.25;
     max-width: 603px;
