@@ -14,7 +14,7 @@
 .advertisement-slogan {
   color: #fbfbfb;
   background-color: #576f35;
-  display: flex;
+  display: inline-flex;
   border-radius: 12px;
 }
 /* Styles for Tablet devices */
@@ -36,6 +36,7 @@
   }
   .advertisement-slogan {
     min-height: 86px;
+    min-width: 675px;
     align-items: flex-end;
   }
 }
@@ -48,11 +49,14 @@
   .advertisement-text {
     color: black;
     min-width: 1054px;
+    min-height: 228px;
     font-size: 76px;
     line-height: 1;
   }
   .advertisement-slogan {
     align-items: center;
-    display: inline;
+  }
+  .advertisement-desktop {
+    display: block;
   }
 }
