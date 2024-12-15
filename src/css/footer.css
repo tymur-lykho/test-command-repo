@@ -38,7 +38,6 @@
 }
 .footer-logo {
   fill: #fbfbfb;
-  background-color: antiquewhite;
 }
 .footer-title {
   color: #fbfbfb;
@@ -143,5 +142,7 @@
   .footer-content {
     display: flex;
     width: 565px;
+  }
+  .footer-list {
   }
 }
