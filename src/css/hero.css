@@ -2,18 +2,13 @@
 
 .section-hero {
   position: relative;
-  background-color: #576f35;
+  background-color: var(--color-green-background);
 }
 .hero-container {
   padding-top: 100px;
   padding-bottom: 412px;
 
-  background-image: linear-gradient(
-      to bottom,
-      rgba(20, 20, 20, 0.2),
-      rgba(20, 20, 20, 0.2)
-    ),
-    url(/img/hero/pic-mob@1x.jpg);
+  background-image: url(/img/hero/pic-mob@1x.jpg);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
@@ -22,12 +17,7 @@
 
 @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero-container {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(20, 20, 20, 0.2),
-        rgba(20, 20, 20, 0.2)
-      ),
-      url(/img/hero/pic-mob@2x.jpg);
+    background-image: url(/img/hero/pic-mob@2x.jpg);
   }
 }
 
@@ -35,22 +25,11 @@
   .hero-container {
     padding-top: 120px;
     padding-bottom: 588px;
-    background-image: linear-gradient(
-        to bottom,
-        rgba(20, 20, 20, 0.2),
-        rgba(20, 20, 20, 0.2)
-      ),
-      url(/img/hero/pic-tab@1x.jpg);
+    background-image: url(/img/hero/pic-tab@1x.jpg);
   }
-  @media screen and (min-width: 768px) and (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  @media screen and (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero-container {
-      background-image: linear-gradient(
-          to bottom,
-          rgba(20, 20, 20, 0.2),
-          rgba(20, 20, 20, 0.2)
-        ),
-        url(/img/hero/pic-tab@2x.jpg);
+      background-image: url(/img/hero/pic-tab@2x.jpg);
     }
   }
 }
@@ -59,24 +38,13 @@
   .hero-container {
     padding-top: 232px;
     padding-bottom: 52px;
-    background-image: linear-gradient(
-        to bottom,
-        rgba(20, 20, 20, 0.2),
-        rgba(20, 20, 20, 0.2)
-      ),
-      url(/img/hero/pic-desk@1x.jpg);
+    background-image: url(/img/hero/pic-desk@1x.jpg);
 
     background-position: right;
   }
-  @media screen and (min-width: 1280px) and (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  @media screen and (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .hero-container {
-      background-image: linear-gradient(
-          to bottom,
-          rgba(20, 20, 20, 0.2),
-          rgba(20, 20, 20, 0.2)
-        ),
-        url(/img/hero/pic-desk@2x.jpg);
+      background-image: url(/img/hero/pic-desk@2x.jpg);
     }
   }
 }
