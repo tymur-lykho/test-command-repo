@@ -15,7 +15,7 @@
 .reviews-js-subtitle {
   max-width: 335px;
   font-size: 14px;
-  line-height: 143%;
+  line-height: 1.43;
   color: #141414;
   margin-bottom: 40px;
 }
@@ -23,7 +23,7 @@
   .reviews-js-subtitle {
     max-width: 553px;
     font-size: 16px;
-    line-height: 125%;
+    line-height: 1.25;
     margin-bottom: 52px;
   }
 }
@@ -34,6 +34,10 @@
   }
 }
 .reviews-js-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   border: 1px solid #d4bfc4;
   border-radius: 24px;
   padding: 20px 16px;
@@ -55,21 +59,21 @@
 }
 @media only screen and (min-width: 768px) {
   .reviews-js-item:not(:last-child) {
-    display: block;
+    display: flex;
   }
 }
 @media only screen and (min-width: 1280px) {
   .reviews-js-item:last-child {
-    display: block;
+    display: flex;
   }
 }
 .reviews-js-img {
-  margin: 0 auto 24px;
+  margin-bottom: 24px;
 }
 .reviews-js-caption {
   font-weight: 600;
   font-size: 18px;
-  line-height: 111%;
+  line-height: 1.11;
   letter-spacing: -0.01em;
   text-transform: uppercase;
   text-align: center;
@@ -78,14 +82,15 @@
 }
 .reviews-js-text {
   font-size: 14px;
-  line-height: 143%;
+  line-height: 1.43;
   text-align: center;
   color: #858585;
+  max-width: 288px;
 }
 @media only screen and (min-width: 768px) {
   .reviews-js-text {
     font-size: 16px;
-    line-height: 125%;
+    line-height: 1.25;
   }
 }
 .reviews-js-dots {

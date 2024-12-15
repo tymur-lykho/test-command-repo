@@ -11,12 +11,12 @@ document.addEventListener('DOMContentLoaded', () => {
     if (viewportWidth < 768) {
       // Мобільний режим: показуємо один елемент
       items.forEach((item, index) => {
-        item.style.display = index === currentIndex ? 'block' : 'none';
+        item.style.display = index === currentIndex ? 'flex' : 'none';
       });
 
       // Відображаємо всі три крапки
       dots.forEach((dot, index) => {
-        dot.style.display = 'inline-block';
+        dot.style.display = 'inline-flex';
         dot.classList.toggle('active', index === currentIndex);
       });
     } else if (viewportWidth >= 768 && viewportWidth < 1280) {
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
           index === currentIndex ||
           index === (currentIndex + 1) % items.length
         ) {
-          item.style.display = 'block';
+          item.style.display = 'flex';
         } else {
           item.style.display = 'none';
         }
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // Відображаємо тільки дві крапки
       dots.forEach((dot, index) => {
         if (index < 2) {
-          dot.style.display = 'inline-block';
+          dot.style.display = 'inline-flex';
         } else {
           dot.style.display = 'none';
         }
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       // Десктопний режим: показуємо всі елементи
       items.forEach(item => {
-        item.style.display = 'block';
+        item.style.display = 'flex';
       });
 
       // Ховаємо всі крапки
