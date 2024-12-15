@@ -1,11 +1,16 @@
 /* #region Reviews */
 
 .reviews-js-title-green {
-  color: #576f35;
+  color: var(--color-green-background);
 }
 .reviews-js-title {
   max-width: 335px;
-  color: #141414;
+  color: var(--color-black-text);
+}
+@media only screen and (max-width: 375px) {
+  .reviews-js-title {
+    font-size: clamp(2.875rem, 2.148rem + 3.64vw, 3rem);
+  }
 }
 @media only screen and (min-width: 768px) {
   .reviews-js-title {
@@ -16,7 +21,7 @@
   max-width: 335px;
   font-size: 14px;
   line-height: 1.43;
-  color: #141414;
+  color: var(--color-black-text);
   margin-bottom: 40px;
 }
 @media only screen and (min-width: 768px) {
@@ -38,7 +43,7 @@
   flex-direction: column;
   align-items: center;
 
-  border: 1px solid #d4bfc4;
+  border: 1px solid var(--color-accent);
   border-radius: 24px;
   padding: 20px 16px;
   max-width: 335px;
@@ -77,14 +82,14 @@
   letter-spacing: -0.01em;
   text-transform: uppercase;
   text-align: center;
-  color: #141414;
+  color: var(--color-black-text);
   margin-bottom: 8px;
 }
 .reviews-js-text {
   font-size: 14px;
   line-height: 1.43;
   text-align: center;
-  color: #858585;
+  color: var(--сolor-details);
   max-width: 288px;
 }
 @media only screen and (min-width: 768px) {
@@ -107,13 +112,13 @@
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #d4bfc4;
+  background-color: var(--color-accent);
   border: none;
   transition: 250ms ease-in-out;
   transition-property: background-color;
 }
 .dot.active {
-  background-color: #576f35;
+  background-color: var(--color-green-background);
 }
 
 @media only screen and (max-width: 1279px) {
