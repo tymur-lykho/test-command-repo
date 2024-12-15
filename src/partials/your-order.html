@@ -1,4 +1,4 @@
-<section class="your-order">
+<section class="section your-order">
   <div class="container your-order-container">
     <div class="title-container">
       <h2 class="your-order-title title">
@@ -17,13 +17,14 @@
         !
       </h3>
 
-      <form class="form">
+      <form name="contact_form" class="form">
         <input
           type="text"
           id="user-name"
           name="user_name"
           placeholder="Full Name"
           class="form-input"
+          pattern="^[A-Za-zА-Яа-я0-9\s_-]{1,50}$"
           required
         />
         <input
@@ -32,9 +33,11 @@
           name="user_email"
           placeholder="Email"
           class="form-input"
+          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
           required
         />
         <textarea
+          
           id="user_comment"
           name="user_comment"
           rows="10"
@@ -42,22 +45,56 @@
           class="form-input comment-input"
         >
         </textarea>
-        <button type="submit" class="form-btn btn">Send</button>
+        <button class="form-btn btn" type="submit">Send</button>
       </form>
     </div>
     <div class="img-container">
-      <div class="img-box"></div>
+      <div class="img-box">
+        <picture class="img-container-picture">
+          <source
+            srcset="./img/pic-mob@1x.png 1x, ./img/pic-mob@2x.png 2x"
+            media="(max-width: 767px)"
+          />
+          <source
+            srcset="./img/pic-tab@1x.png 1x, ./img/pic-tab@2x.png 2x"
+            media="(min-width: 768px) and (max-width: 1023px)"
+          />
+          <source
+            srcset="./img/pic-desk@1x.png 1x, ./img/pic-desk@2x.png 2x"
+            media="(min-width: 1024px)"
+          />
+          <img
+            src="./img/pic-mob@1x.png"
+            alt="Woman is making a fresh smoothie"
+          />
+        </picture>
+      </div>
       <p class="img-container-text">Follow us on our social networks:</p>
-      <ul class="img-container-social-media">
-        <li>
-          <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+      <ul class="img-container-social-media-list">
+        <li class="img-container-social-media-item">
+          <a
+            href="https://www.instagram.com/goitclub/"
+            target="_blank"
+            class="img-container-social-media-link"
+            >Instagram</a
+          >
         </li>
-        <li>/</li>
-        <li>
-          <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+        <li class="img-container-social-media-item">
+          <a
+            href="https://www.facebook.com/goITclub/"
+            target="_blank"
+            class="img-container-social-media-link"
+            >Facebook</a
+          >
         </li>
-        <li>/</li>
-        <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+        <li class="img-container-social-media-item">
+          <a
+            href="https://www.youtube.com/c/GoIT"
+            target="_blank"
+            class="img-container-social-media-link"
+            >Youtube</a
+          >
+        </li>
       </ul>
     </div>
   </div>
