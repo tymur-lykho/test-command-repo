@@ -1,5 +1,6 @@
 .footer {
-  padding: 20px 0;
+  padding: 52px 0;
+  background: #7a3145;
 }
 .footer-desc {
   text-align: center;
@@ -18,4 +19,129 @@
   height: 24%;
   background-color: #41d1ff;
   transition: 200ms ease;
+}
+
+.footer-container {
+}
+
+.footer-logo-text {
+  margin-bottom: 40px;
+}
+.footer-div {
+  margin-right: ;
+  display: flex;
+  margin-bottom: 14px;
+}
+
+.footer-p {
+  margin-bottom: 24px;
+}
+.footer-logo {
+  fill: #fbfbfb;
+  background-color: antiquewhite;
+}
+.footer-title {
+  color: #fbfbfb;
+}
+.footer-text {
+  width: 335px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.25;
+  color: #fbfbfb;
+}
+
+.footer-content {
+  margin-right: 121px;
+  width: 228px;
+}
+.footer-list {
+  margin-bottom: 40px;
+}
+.footer-item {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+}
+
+.footer-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.footer-contacts {
+}
+.footer-address {
+  width: 215px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #fbfbfb;
+  margin-bottom: 80px;
+}
+
+.footer-phone {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #fbfbfb;
+  margin-bottom: 24px;
+}
+
+.footer-policy {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #d4bfc4;
+  margin-right: 686px;
+}
+.footer-Harvest {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #d4bfc4;
+  display: block;
+}
+
+.footer-end {
+  display: flex;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-container {
+    max-width: 768px;
+    display: flex;
+  }
+  .footer-text {
+    width: 265px;
+    line-height: 1.42857;
+    font-size: 16px;
+  }
+  .footer-content {
+  }
+
+  .footer-end {
+  }
+  .footer-phone {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .footer-container {
+    display: flex;
+    max-width: 1280px;
+    flex-wrap: wrap;
+  }
+  .footer-logo-text {
+    margin-right: 250px;
+    margin-bottom: 124px;
+  }
+  .footer-content {
+    display: flex;
+    width: 565px;
+  }
 }
