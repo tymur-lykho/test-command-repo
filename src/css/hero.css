@@ -2,10 +2,11 @@
 
 .section-hero {
   position: relative;
-  padding: 100px 0px 412px 0px;
-  max-width: 375px;
-  margin: 0 auto;
   background-color: #576f35;
+}
+.hero-container {
+  padding-top: 100px;
+  padding-bottom: 412px;
 
   background-image: linear-gradient(
       to bottom,
@@ -20,7 +21,7 @@
 }
 
 @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .section-hero {
+  .hero-container {
     background-image: linear-gradient(
         to bottom,
         rgba(20, 20, 20, 0.2),
@@ -31,9 +32,9 @@
 }
 
 @media screen and (min-width: 768px) {
-  .section-hero {
-    max-width: 768px;
-    padding: 120px 0px 588px 0px;
+  .hero-container {
+    padding-top: 120px;
+    padding-bottom: 588px;
     background-image: linear-gradient(
         to bottom,
         rgba(20, 20, 20, 0.2),
@@ -43,7 +44,7 @@
   }
   @media screen and (min-width: 768px) and (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .section-hero {
+    .hero-container {
       background-image: linear-gradient(
           to bottom,
           rgba(20, 20, 20, 0.2),
@@ -55,9 +56,9 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .section-hero {
-    max-width: 1280px;
-    padding: 232px 0px 52px 0px;
+  .hero-container {
+    padding-top: 232px;
+    padding-bottom: 52px;
     background-image: linear-gradient(
         to bottom,
         rgba(20, 20, 20, 0.2),
@@ -69,7 +70,7 @@
   }
   @media screen and (min-width: 1280px) and (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .section-hero {
+    .hero-container {
       background-image: linear-gradient(
           to bottom,
           rgba(20, 20, 20, 0.2),
@@ -82,18 +83,17 @@
 
 .hero-title {
   max-width: 335px;
-  margin-bottom: 20px;
-  font-weight: 600;
   font-size: 52px;
   line-height: 1;
-  letter-spacing: -0.01em;
-  text-transform: uppercase;
 }
-
+@media screen and (max-width: 374px) {
+  .hero-title {
+    font-size: 42px;
+  }
+}
 @media screen and (min-width: 768px) {
   .hero-title {
     max-width: 704px;
-    margin-bottom: 24px;
     font-size: 76px;
   }
 }
@@ -109,6 +109,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 1.43;
+  max-width: 335px;
 }
 
 @media screen and (min-width: 768px) {
