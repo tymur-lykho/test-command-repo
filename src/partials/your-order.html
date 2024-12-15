@@ -1,0 +1,101 @@
+<section class="section your-order">
+  <div class="container your-order-container">
+    <div class="title-container">
+      <h2 class="your-order-title title">
+        Fresh <span class="title-span">Harvest</span> Box has got you covered
+      </h2>
+      <p class="your-order-text">
+        Our boxes are packed with delicious, nutritious vegetables, perfect for
+        anyone looking to eat healthier or support local farmers. Order your box
+        today and start enjoying the best that nature has to offer!
+      </p>
+    </div>
+    <div class="form-container">
+      <h3 class="form-title title">
+        Ordering <span class="from-us">from us</span> is quick and easy! Fill
+        out <span class="the-form">the form</span> below and we will contact you
+        !
+      </h3>
+
+      <form name="contact_form" class="form">
+        <input
+          type="text"
+          id="user-name"
+          name="user_name"
+          placeholder="Full Name"
+          class="form-input"
+          pattern="^[A-Za-zА-Яа-я0-9\s_-]{1,50}$"
+          required
+        />
+        <input
+          type="email"
+          id="user-email"
+          name="user_email"
+          placeholder="Email"
+          class="form-input"
+          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+          required
+        />
+        <textarea
+          
+          id="user_comment"
+          name="user_comment"
+          rows="10"
+          placeholder="Comment"
+          class="form-input comment-input"
+        >
+        </textarea>
+        <button class="form-btn btn" type="submit">Send</button>
+      </form>
+    </div>
+    <div class="img-container">
+      <div class="img-box">
+        <picture class="img-container-picture">
+          <source
+            srcset="./img/pic-mob@1x.png 1x, ./img/pic-mob@2x.png 2x"
+            media="(max-width: 767px)"
+          />
+          <source
+            srcset="./img/pic-tab@1x.png 1x, ./img/pic-tab@2x.png 2x"
+            media="(min-width: 768px) and (max-width: 1023px)"
+          />
+          <source
+            srcset="./img/pic-desk@1x.png 1x, ./img/pic-desk@2x.png 2x"
+            media="(min-width: 1024px)"
+          />
+          <img
+            src="./img/pic-mob@1x.png"
+            alt="Woman is making a fresh smoothie"
+          />
+        </picture>
+      </div>
+      <p class="img-container-text">Follow us on our social networks:</p>
+      <ul class="img-container-social-media-list">
+        <li class="img-container-social-media-item">
+          <a
+            href="https://www.instagram.com/goitclub/"
+            target="_blank"
+            class="img-container-social-media-link"
+            >Instagram</a
+          >
+        </li>
+        <li class="img-container-social-media-item">
+          <a
+            href="https://www.facebook.com/goITclub/"
+            target="_blank"
+            class="img-container-social-media-link"
+            >Facebook</a
+          >
+        </li>
+        <li class="img-container-social-media-item">
+          <a
+            href="https://www.youtube.com/c/GoIT"
+            target="_blank"
+            class="img-container-social-media-link"
+            >Youtube</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

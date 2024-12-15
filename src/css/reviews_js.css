@@ -1,0 +1,126 @@
+/* #region Reviews */
+
+.reviews-js-title-green {
+  color: #576f35;
+}
+.reviews-js-title {
+  max-width: 335px;
+  color: #141414;
+}
+@media only screen and (min-width: 768px) {
+  .reviews-js-title {
+    max-width: 553px;
+  }
+}
+.reviews-js-subtitle {
+  max-width: 335px;
+  font-size: 14px;
+  line-height: 143%;
+  color: #141414;
+  margin-bottom: 40px;
+}
+@media only screen and (min-width: 768px) {
+  .reviews-js-subtitle {
+    max-width: 553px;
+    font-size: 16px;
+    line-height: 125%;
+    margin-bottom: 52px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .reviews-js-list {
+    display: flex;
+    gap: 24px;
+  }
+}
+.reviews-js-item {
+  border: 1px solid #d4bfc4;
+  border-radius: 24px;
+  padding: 20px 16px;
+  max-width: 335px;
+}
+@media only screen and (min-width: 768px) {
+  .reviews-js-item {
+    padding: 20px;
+    max-width: 340px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .reviews-js-item {
+    max-width: 344px;
+  }
+}
+.reviews-js-item:not(:first-child) {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .reviews-js-item:not(:last-child) {
+    display: block;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .reviews-js-item:last-child {
+    display: block;
+  }
+}
+.reviews-js-img {
+  margin: 0 auto 24px;
+}
+.reviews-js-caption {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 111%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #141414;
+  margin-bottom: 8px;
+}
+.reviews-js-text {
+  font-size: 14px;
+  line-height: 143%;
+  text-align: center;
+  color: #858585;
+}
+@media only screen and (min-width: 768px) {
+  .reviews-js-text {
+    font-size: 16px;
+    line-height: 125%;
+  }
+}
+.reviews-js-dots {
+  display: flex;
+  gap: 20px;
+  margin-top: 28px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  flex-shrink: 0;
+}
+.dot {
+  all: unset;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #d4bfc4;
+  border: none;
+  transition: 250ms ease-in-out;
+  transition-property: background-color;
+}
+.dot.active {
+  background-color: #576f35;
+}
+
+@media only screen and (max-width: 1279px) {
+  .dot {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .dot {
+    display: none;
+  }
+}
+
+/* #endregion */
