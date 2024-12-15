@@ -23,7 +23,7 @@
     />
 
     <script type="module" crossorigin src="/project-DreamTeam-11/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-DreamTeam-11/assets/index-BE0hhCkt.css">
+    <link rel="stylesheet" crossorigin href="/project-DreamTeam-11/assets/index-CopNha-x.css">
   </head>
   <body>
     <header class="page-header" id="home">
@@ -357,14 +357,14 @@
         !
       </h3>
 
-      <form name="contact_form" class="form">
+      <form name="contact_form" class="order-form">
         <input
           type="text"
           id="user-name"
           name="user_name"
           placeholder="Full Name"
           class="form-input"
-          pattern="^[A-Za-zА-Яа-я0-9\s_-]{1,50}$"
+          pattern="^[A-Za-zА-Яа-яЁёІіЇїЄєҐґ']{2,25}( [A-Za-zА-Яа-яЁёІіЇїЄєҐґ']{2,25}){0,3}$"
           required
         />
         <input
@@ -373,42 +373,41 @@
           name="user_email"
           placeholder="Email"
           class="form-input"
-          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+          pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,8}$"
           required
         />
         <textarea
-          
           id="user_comment"
           name="user_comment"
           rows="10"
           placeholder="Comment"
           class="form-input comment-input"
-        >
-        </textarea>
+          pattern="^[A-Za-zА-Яа-яЁёІіЇїЄєҐґ0-9\s.,!?'-]{1,500}$"
+        ></textarea>
         <button class="form-btn btn" type="submit">Send</button>
       </form>
     </div>
     <div class="img-container">
-      <div class="img-box">
-        <picture class="img-container-picture">
-          <source
-            srcset="./img/pic-mob@1x.png 1x, ./img/pic-mob@2x.png 2x"
-            media="(max-width: 767px)"
-          />
-          <source
-            srcset="./img/pic-tab@1x.png 1x, ./img/pic-tab@2x.png 2x"
-            media="(min-width: 768px) and (max-width: 1023px)"
-          />
-          <source
-            srcset="./img/pic-desk@1x.png 1x, ./img/pic-desk@2x.png 2x"
-            media="(min-width: 1024px)"
-          />
-          <img
-            src="./img/pic-mob@1x.png"
-            alt="Woman is making a fresh smoothie"
-          />
-        </picture>
-      </div>
+      <picture class="img-box">
+        <source
+          srcset="/project-DreamTeam-11/assets/pic-desk@1x-rh13qwIx.png 1x, /project-DreamTeam-11/assets/pic-desk@2x-c7hLIz1w.png 2x"
+          media="(min-width: 1024px)"
+        />
+        <source
+          srcset="/project-DreamTeam-11/assets/pic-tab@1x-CT7EBBCZ.png 1x, /project-DreamTeam-11/assets/pic-tab@2x-CuEwY9NO.png 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="/project-DreamTeam-11/assets/pic-mob@1x-DDPmflLI.png 1x, /project-DreamTeam-11/assets/pic-mob@2x-exZOii_5.png 2x"
+          media="(max-width: 767px)"
+        />
+
+        <img
+          src="/project-DreamTeam-11/assets/pic-mob@1x-DDPmflLI.png"
+          alt="Woman is making a fresh smoothie"
+        />
+      </picture>
+
       <p class="img-container-text">Follow us on our social networks:</p>
       <ul class="img-container-social-media-list">
         <li class="img-container-social-media-item">
