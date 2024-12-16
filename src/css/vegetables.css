@@ -1,5 +1,5 @@
 .vegetables {
-  background: #7a3145;
+  background: var(--color-primary-brand);
 }
 .vegetables-container {
   display: flex;
@@ -8,30 +8,25 @@
 }
 
 .veg-head {
-  color: #fbfbfb;
-  justify-content: start;
-  margin-right: auto;
+  color: var(--color-white-text);
+  align-self: flex-start;
+  max-width: 508px;
 }
-@media only screen and (min-width: 768px) {
-  .veg-head {
-    width: 508px;
-  }
-}
+
 .veg-span {
-  color: #d4bfc4;
+  color: var(--color-accent);
 }
 .veg-paragraph {
-    font-weight: 500;
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.25;
-  color: #fbfbfb;
-  width: 335px;
+  color: var(--color-white-text);
+  max-width: 626px;
   margin-bottom: 40px;
   margin-right: auto;
 }
 @media only screen and (min-width: 768px) {
   .veg-paragraph {
-    width: 626px;
     font-size: 16px;
     margin-bottom: 52px;
   }
@@ -50,20 +45,20 @@
   }
 }
 .veg-item {
-  width: 335px;
+  width: 100%;
   border-radius: 40px;
   padding: 32px 24px;
-  background: #fbfbfb;
+  background: var(--color-white-text);
 }
 @media only screen and (min-width: 768px) {
   .veg-item {
-    width: 340px;
+    width: calc((100% - 24px) / 2);
     padding: 32px 30px;
   }
 }
 @media only screen and (min-width: 1280px) {
   .veg-item {
-    width: 344px;
+    width: calc((100% - 2 * 24px) / 3);
     padding: 32px 32px;
   }
 }
@@ -73,7 +68,7 @@
   line-height: 1;
   letter-spacing: -0.01em;
   text-transform: uppercase;
-  color: #7a3145;
+  color: var(--color-primary-brand);
   margin-bottom: 12px;
 }
 @media only screen and (min-width: 768px) {
@@ -85,7 +80,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 1.42857;
-  color: #141414;
+  color: var(--color-black-text);
   margin-bottom: 12px;
 }
 @media only screen and (min-width: 768px) {
