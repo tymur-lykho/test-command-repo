@@ -1,5 +1,10 @@
 .reviews-title {
-  color: #141414;
+  color: var(--color-black-text);
+}
+@media only screen and (max-width: 346px) {
+  .reviews-title {
+    font-size: 47px;
+  }
 }
 @media only screen and (min-width: 768px) {
   .reviews-title {
@@ -7,13 +12,13 @@
   }
 }
 .green-text {
-  color: #576f35;
+  color: var(--color-green-background);
 }
 .reviews-content {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.42857;
-  color: #141414;
+  color: var(--color-black-text);
   margin-bottom: 40px;
 }
 @media only screen and (min-width: 768px) {
@@ -34,7 +39,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid #d4bfc4;
+  border: 1px solid var(--color-accent);
   border-radius: 24px;
   padding: 20px 16px;
 }
@@ -80,7 +85,7 @@
   font-size: 14px;
   line-height: 1.43;
   text-align: center;
-  color: #858585;
+  color: var(--сolor-details);
   max-width: 288px;
 }
 @media only screen and (min-width: 768px) {
