@@ -1,117 +1,166 @@
-/* #region HEADER */
-.page-header {
-  padding: 0px 100px;
-  position: fixed;
-  background-color: transparent;
-  border: none;
-}
+/* Якщо треба буде додати медіа-правила для кожної позиції, що змінилася, я перероблю, але збільшиться кількість рядків набагато */
+
+/* Styles for MOBILE */
+
 .header-container {
-  margin: 0 auto;
+  padding: 20px 0 0 0;
+  max-width: 335px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .nav-header {
   display: flex;
   align-items: center;
 }
-.logo {
+.page-header {
+  position: relative;
+  background-color: transparent;
+  margin: 0 auto;
 }
 .header-logo {
-  width: 216px;
-  height: 20px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  margin-right: 366px;
+  display: block;
+  padding: 8px 0;
 }
-.logo-first {
-  width: 20px;
-  max-height: 20px;
-  fill: #fbfbfb;
+.logo-icon {
+  width: 168px;
+  height: 16px;
+  display: block;
 }
-.logo-second {
-  width: 188px;
-  height: 17px;
-  fill: #fbfbfb;
+.nav-list {
+  display: none;
 }
-.header-wrap {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-right: 20px;
-}
-.btn {
-  min-width: 83px;
-  min-height: 44px;
-  padding: 12px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 125%;
-  text-align: center;
-  color: #fbfbfb;
+.burger-btn {
+  padding: 0;
+  border: none;
   background-color: transparent;
-  border: 1px solid #fbfbfb;
-  border-radius: 12px;
-  /* transition: 300ms ease-in;
-  transition-property: color, border-color, backgroung-color; */
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+}
+.burger-icon {
+  display: block;
+  stroke-width: 3px;
+  stroke: #fbfbfb;
+  fill: none;
+}
+/* Styles for TABLET */
+@media only screen and (min-width: 768px) {
+  .container.header-container {
+    padding-top: 32px;
+  }
+  .header-logo {
+    padding: 10px 0;
+  }
+  .logo-icon {
+    width: 216px;
+    height: 20px;
+  }
+
+  .burger-icon {
+    width: 40;
+    height: 40;
+  }
 }
 
-/* подивіться, будь ласка, чому кнопки в спокійному стані не наслідують колір */
-.btn-works {
-  min-width: 118px;
+/* Styles for DESCTOP */
+@media only screen and (min-width: 1158px) {
+  .header-container {
+    display: flex;
+    position: relative;
+  }
+
+  .nav-header {
+    display: flex;
+    align-items: center;
+  }
+  .header-logo {
+    padding: 16px 0;
+    margin-right: 360px;
+  }
+
+  .nav-list {
+    display: flex;
+    align-items: center;
+  }
+  .burger-btn {
+    display: none;
+  }
+  .hed-nav {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-right: 20px;
+  }
+
+  .nav-link-header {
+    position: relative;
+    display: block;
+    border: 1px solid #fbfbfb;
+    border-radius: 12px;
+    padding: 12px;
+    height: 44px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 125%;
+    text-align: center;
+    color: #fbfbfb;
+  }
+  .nav-item-btn {
+    display: block;
+  }
+  .nav-link-btn {
+    border-radius: 30px;
+    padding: 16px 32px;
+    min-width: 157px;
+    height: 52px;
+    background: #7a3145;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 111%;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #fbfbfb;
+    margin-left: 0 auto;
+  }
+  .nav-link-header:hover {
+    color: #7a3145;
+    background-color: #d4bfc4;
+    border: 1px solid #d4bfc4;
+  }
+
+  .nav-link-header:active {
+    color: #7a3145;
+    background-color: #fbfbfb;
+    border: 1px solid #fbfbfb;
+  }
+  .nav-link-btn:hover {
+    color: #7a3145;
+    background-color: #d4bfc4;
+    border: 1px solid #d4bfc4;
+  }
+
+  .nav-link-btn:active {
+    color: #7a3145;
+    background-color: #fbfbfb;
+    border: 1px solid #fbfbfb;
+  }
 }
 
-.btn-veg {
-  min-width: 104px;
-}
-.btn-rev {
-  min-width: 83px;
-}
-/* не спрацьовують ховер/фокус об'єднані, пізніше подивлюся причину */
-.btn-works:hover {
-  color: #7a3145;
-  background-color: #d4bfc4;
-  border: 1px solid #d4bfc4;
-}
+/* #endregion */
 
-.btn-veg:hover {
-  color: #7a3145;
-  background-color: #d4bfc4;
-  border: 1px solid #d4bfc4;
-}
-.btn-rev:hover {
-  color: #7a3145;
-  background-color: #d4bfc4;
-  border: 1px solid #d4bfc4;
-}
+/* Стилізована кнопка Shop Now, якщо буде потрібна */
 
-.btn-works,
-.btn-veg,
-.btn-rev :focus {
-  color: #7a3145;
-  background-color: #fbfbfb;
-  border: 1px solid #fbfbfb;
-}
-.btn-header {
+/* .btn-header {
   border-radius: 30px;
   padding: 16px 32px;
   min-width: 157px;
   height: 52px;
-  color: #fbfbfb;
-  background-color: #7a3145;
+  background: #7a3145;
   font-weight: 600;
   font-size: 18px;
   line-height: 111%;
   letter-spacing: -0.01em;
-}
-.btn-header:focus {
-  color: #7a3145;
-  background-color: #fbfbfb;
-  border: 1px solid #fbfbfb;
-}
-.btn-header:hover {
-  color: #7a3145;
-  background-color: #d4bfc4;
-  border: 1px solid #d4bfc4;
-}
-
-/* #endregion */
+  text-transform: uppercase;
+  color: #fbfbfb;
+} */
