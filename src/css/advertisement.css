@@ -1,13 +1,8 @@
 /* advertisement */
 .advertisement {
 }
-.advertisement-text {
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 1.08;
-  letter-spacing: -0.01em;
-  text-transform: uppercase;
-  color: black;
+.title {
+  margin-bottom: 0px;
 }
 .advertisement-slogan {
   color: #fbfbfb;
@@ -17,14 +12,6 @@
 }
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
-  .advertisement-text {
-    color: black;
-    min-width: 704px;
-    font-weight: 600;
-    font-size: 64px;
-    line-height: 1;
-    letter-spacing: -0.01em;
-  }
   .advertisement-slogan {
     min-height: 86px;
     min-width: 675px;
@@ -42,6 +29,9 @@
   }
   .advertisement-slogan {
     align-items: center;
+    min-width: 808px;
+    min-height: 84px;
+    padding-left: 16px;
   }
   .advertisement-desktop {
     display: block;
