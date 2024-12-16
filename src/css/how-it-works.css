@@ -61,16 +61,8 @@
     border: 0;
     white-space: nowrap;
 }
-/* Styles for Tablet devices */
-@media only screen and (min-width: 768px) {
-  .works-caption {
-  }
-}
-/* Styles for Desktop devices */
-@media only screen and (min-width: 1280px) {
-  .works-caption {
-  }
-}
+
+
 /* #endregion */
 
 /* #region works-img  */
@@ -138,20 +130,15 @@ height: 640px;
 .works-box-box {
     
     background: #576f35;
-    display: flex; /* Вмикаємо flexbox */
-    justify-content: center; /* Горизонтальне вирівнювання */
-    align-items: center; /* Вертикальне вирівнювання */
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
    
-    width: 100%; /* Ширина кожного елемента на мобільних пристроях */
+    width: 100%; 
     padding: 20px;
 
 }
-/* Styles for Tablet devices */
-@media only screen and (min-width: 768px) {
-    .works-box-box {
-      
-    }
-}
+
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1280px) {
     .works-box-box {
@@ -175,12 +162,7 @@ height: 640px;
 
     }
 }
-/* Styles for Desktop devices */
-@media only screen and (min-width: 1280px) {
-    .works-box {
-        
-    }
-}
+
 /* #endregion */
 
 /* #region works-title  */
@@ -195,11 +177,7 @@ text-transform: uppercase;
 color: #fbfbfb;
 margin-bottom: 20px;
 }
-/* Styles for Tablet devices */
-@media only screen and (min-width: 768px) {
-    .works-title {
-    }
-}
+
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1280px) {
     .works-title {
@@ -214,16 +192,7 @@ margin-bottom: 20px;
 .works-span {
     color: #d4bfc4;
 }
-/* Styles for Tablet devices */
-@media only screen and (min-width: 768px) {
-    .works-span {
-    }
-}
-/* Styles for Desktop devices */
-@media only screen and (min-width: 1280px) {
-    .works-span {
-    }
-}
+
 /* #endregion */
 
 /* #region works-paragraf */
@@ -237,10 +206,7 @@ color: #fbfbfb;
 margin-bottom: 40px;
 }
 /* Styles for Tablet devices */
-@media only screen and (min-width: 768px) {
-    .works-paragraf {
-    }
-}
+
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1280px) {
     .works-paragraf {
@@ -257,16 +223,7 @@ margin-bottom: 40px;
     padding: 0;
     counter-reset: step-counter;  
 }
-/* Styles for Tablet devices */
-@media only screen and (min-width: 768px) {
-    .works-list {
-    }
-}
-/* Styles for Desktop devices */
-@media only screen and (min-width: 1280px) {
-    .works-list {
-    }
-}
+
 /* #endregion */
 
 /* #region works-item  */
@@ -327,12 +284,7 @@ width: 440px;
 height: 76px;
     }
 }
-/* Styles for Desktop devices */
-@media only screen and (min-width: 1280px) {
-    .works-item {
 
-    }
-}
 /* #endregion */
 
 /* #region works-paragraf-par  */
@@ -345,20 +297,14 @@ line-height: 143%;
 color: #858585;
 margin-left: 100px;
 
-
 }
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
     .works-paragraf-par {
 line-height: 125%;
+    }
+}
 
-    }
-}
-/* Styles for Desktop devices */
-@media only screen and (min-width: 1280px) {
-    .works-paragraf-par {
-    }
-}
 /* #endregion */
 
 /* #region works-paragraf-par-span  */
@@ -368,14 +314,5 @@ line-height: 125%;
 font-weight: 700;
 color: #141414;
 }
-/* Styles for Tablet devices */
-@media only screen and (min-width: 768px) {
-    .works-paragraf-par-span {
-    }
-}
-/* Styles for Desktop devices */
-@media only screen and (min-width: 1280px) {
-    .works-paragraf-par-span {
-    }
-}
+
 /* #endregion */
