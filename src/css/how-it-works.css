@@ -99,22 +99,13 @@ display: flex;
 /* Styles for Mobile devices */
 .works-img-jpg {
     border-radius: 30px;
-    width: 335px;
-    height: 452px;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/section1/pic\ mobileSEC2MOB@1x.jpg ); 
-    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-color: #2E2F42;
- 
 
 }
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
     .works-img-jpg {
-width: 640px;
-height: 640px;
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/section1/pic\ desktopSEC2DES@2x.jpg ); 
     }
 }
 /* Styles for Desktop devices */
@@ -249,30 +240,30 @@ align-items: center;
     transform: translateY(-50%);
     width: 52px;
     height: 52px;
-    background-color: #D4BFC4; /* колір */
-    border-radius: 50%; /* Робить круг */
-    z-index: 0; /* Розташування позаду */
+    background-color: #D4BFC4;
+    border-radius: 50%;
+    z-index: 0; 
     margin-left: 24px;
 }
 
 .works-item::after{
-    background-color: #7a3145; /* колір */
+    background-color: #7a3145; 
     width: 42px;
     height: 42px;
-    content: counter(step-counter); /* Вставляємо номер */
-    counter-increment: step-counter; /* Збільшуємо лічильник */
+    content: counter(step-counter);
+    counter-increment: step-counter; 
     position: absolute;
-    left: 5px; /* Центруємо в зеленому крузі */
+    left: 5px; 
     top: 50%;
     transform: translateY(-50%);
-    color: #fff; /* Колір тексту */
+    color: #fff; 
     font-weight: bold;
     font-size: 1em;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%; /* Робить круг */
-    z-index: 1; /* Розташування поверх зеленого круга */
+    border-radius: 50%; 
+    z-index: 1; 
     border-radius: 100%;
     margin-left: 24px;
 }
