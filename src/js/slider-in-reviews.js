@@ -1,52 +1,76 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const items = document.querySelectorAll('.reviews-item');
-  const dots = document.querySelectorAll('.dot');
-  const viewportWidth = window.innerWidth;
-  let currentIndex = 0;
+  const items = document.querySelectorAll('.reviews-js-item'); // Елементи слайдера
+  const dotsContainer = document.querySelector('.reviews-js-dots'); // Контейнер крапок
+  const dots = document.querySelectorAll('.dot'); // Кнопки (крапки)
+  let currentIndex = 0; // Поточний активний слайд
 
+  // Функція оновлення слайдів
   const updateSlides = () => {
     const viewportWidth = window.innerWidth;
 
     if (viewportWidth < 768) {
-      items.forEach((item, i) => {
-        item.style.display = i === currentIndex ? 'block' : 'none';
+      // Мобільний режим: показуємо один елемент
+      items.forEach((item, index) => {
+        item.style.display = index === currentIndex ? 'flex' : 'none';
       });
-      dots.forEach((dot, i) => {
-        dot.classList.toggle('active', i === currentIndex);
+
+      // Відображаємо всі три крапки
+      dots.forEach((dot, index) => {
+        dot.style.display = 'inline-flex';
+        dot.classList.toggle('active', index === currentIndex);
       });
     } else if (viewportWidth >= 768 && viewportWidth < 1280) {
-      items.forEach((item, i) => {
-        if (i === currentIndex || i === (currentIndex + 1) % items.length) {
-          item.style.display = 'block';
+      // Планшетний режим: показуємо два елементи
+      items.forEach((item, index) => {
+        // Показуємо поточний і наступний елемент
+        if (
+          index === currentIndex ||
+          index === (currentIndex + 1) % items.length
+        ) {
+          item.style.display = 'flex';
         } else {
           item.style.display = 'none';
         }
       });
-      dots.forEach((dot, i) => {
-        dot.classList.toggle('active', i === currentIndex);
+
+      // Відображаємо тільки дві крапки
+      dots.forEach((dot, index) => {
+        if (index < 2) {
+          dot.style.display = 'inline-flex';
+        } else {
+          dot.style.display = 'none';
+        }
+        dot.classList.toggle('active', index === currentIndex);
       });
     } else {
+      // Десктопний режим: показуємо всі елементи
       items.forEach(item => {
-        item.style.display = 'block';
+        item.style.display = 'flex';
       });
+
+      // Ховаємо всі крапки
       dots.forEach(dot => {
         dot.style.display = 'none';
       });
     }
   };
 
+  // Функція переходу до конкретного слайду
   const goToSlide = index => {
     currentIndex = index;
     updateSlides();
   };
 
-  dots.forEach((dot, i) => {
+  // Додаємо обробник події кліку для кожної крапки
+  dots.forEach((dot, index) => {
     dot.addEventListener('click', () => {
-      goToSlide(i);
+      goToSlide(index);
     });
   });
 
-  updateSlides();
-
+  // Оновлення при зміні розміру вікна
   window.addEventListener('resize', updateSlides);
+
+  // Ініціалізація
+  updateSlides();
 });

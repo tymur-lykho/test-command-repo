@@ -1,4 +1,4 @@
-<section class="your-order">
+<section class="section your-order">
   <div class="container your-order-container">
     <div class="title-container">
       <h2 class="your-order-title title">
@@ -17,13 +17,14 @@
         !
       </h3>
 
-      <form class="form">
+      <form name="contact_form" class="order-form">
         <input
           type="text"
           id="user-name"
           name="user_name"
           placeholder="Full Name"
           class="form-input"
+          pattern="^[A-Za-zА-Яа-яЁёІіЇїЄєҐґ']{2,25}( [A-Za-zА-Яа-яЁёІіЇїЄєҐґ']{2,25}){0,3}$"
           required
         />
         <input
@@ -32,6 +33,7 @@
           name="user_email"
           placeholder="Email"
           class="form-input"
+          pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,8}$"
           required
         />
         <textarea
@@ -40,24 +42,67 @@
           rows="10"
           placeholder="Comment"
           class="form-input comment-input"
-        >
-        </textarea>
-        <button type="submit" class="form-btn btn">Send</button>
+          pattern="^[A-Za-zА-Яа-яЁёІіЇїЄєҐґ0-9\s.,!?'-]{1,500}$"
+        ></textarea>
+        <button class="form-btn btn" type="submit">Send</button>
       </form>
     </div>
     <div class="img-container">
-      <div class="img-box"></div>
+      <picture class="img-box">
+        <source
+          srcset="
+            ./img/your-order/pic-desk@1x.png 1x,
+            ./img/your-order/pic-desk@2x.png 2x
+          "
+          media="(min-width: 1024px)"
+        />
+        <source
+          srcset="
+            ./img/your-order/pic-tab@1x.png 1x,
+            ./img/your-order/pic-tab@2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./img/your-order/pic-mob@1x.png 1x,
+            ./img/your-order/pic-mob@2x.png 2x
+          "
+          media="(max-width: 767px)"
+        />
+
+        <img
+          src="./img/your-order/pic-mob@1x.png"
+          alt="Woman is making a fresh smoothie"
+        />
+      </picture>
+
       <p class="img-container-text">Follow us on our social networks:</p>
-      <ul class="img-container-social-media">
-        <li>
-          <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+      <ul class="img-container-social-media-list">
+        <li class="img-container-social-media-item">
+          <a
+            href="https://www.instagram.com/goitclub/"
+            target="_blank"
+            class="img-container-social-media-link"
+            >Instagram</a
+          >
         </li>
-        <li>/</li>
-        <li>
-          <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+        <li class="img-container-social-media-item">
+          <a
+            href="https://www.facebook.com/goITclub/"
+            target="_blank"
+            class="img-container-social-media-link"
+            >Facebook</a
+          >
         </li>
-        <li>/</li>
-        <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+        <li class="img-container-social-media-item">
+          <a
+            href="https://www.youtube.com/c/GoIT"
+            target="_blank"
+            class="img-container-social-media-link"
+            >Youtube</a
+          >
+        </li>
       </ul>
     </div>
   </div>
