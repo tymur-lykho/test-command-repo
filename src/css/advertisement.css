@@ -18,6 +18,7 @@
   background-color: var(--color-green-background);
   display: inline-flex;
   border-radius: 12px;
+  max-height: 102px;
 }
 
 /* Styles for Tablet devices */
@@ -37,8 +38,8 @@
   .advertisement-slogan::before {
     content: '';
     border-radius: 12px;
-    width: 808px;
-    height: 84px;
+    min-width: 808px;
+    min-height: 84px;
     background-color: var(--color-green-background);
     display: block;
     position: absolute;
