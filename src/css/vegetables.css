@@ -19,7 +19,7 @@
 .veg-paragraph {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.25;
+  line-height: 1.43;
   color: var(--color-white-text);
   max-width: 626px;
   margin-bottom: 40px;
@@ -28,6 +28,7 @@
 @media only screen and (min-width: 768px) {
   .veg-paragraph {
     font-size: 16px;
+    line-height: 1.25;
     margin-bottom: 52px;
   }
 }
@@ -87,5 +88,10 @@
   .veg-item-price {
     font-size: 16px;
     line-height: 1.25;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .veg-item-price {
+    margin-bottom: 8px;
   }
 }
