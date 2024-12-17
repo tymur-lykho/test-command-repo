@@ -1,14 +1,25 @@
 /* advertisement */
-.advertisement {
+.advertisement-text {
   margin-bottom: 0px;
+}
+@media only screen and (min-width: 1280px) {
+  .advertisement-text {
+    color: var(--color-black-text);
+    min-width: 1054px;
+    min-height: 228px;
+    font-size: 76px;
+    line-height: 1;
+    position: relative;
+  }
 }
 
 .advertisement-slogan {
-  color: #fbfbfb;
-  background-color: #576f35;
+  color: var(--color-white-text);
+  background-color: var(--color-green-background);
   display: inline-flex;
   border-radius: 12px;
 }
+
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
   .advertisement-slogan {
@@ -19,15 +30,6 @@
 }
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1280px) {
-  .advertisement-text {
-    color: black;
-    min-width: 1054px;
-    min-height: 228px;
-    font-size: 76px;
-    line-height: 1;
-    position: relative;
-  }
-
   .advertisement-slogan {
     background-color: transparent;
     align-items: center;
@@ -37,12 +39,12 @@
     border-radius: 12px;
     width: 808px;
     height: 84px;
-    background-color: #576f35;
+    background-color: var(--color-green-background);
     display: block;
     position: absolute;
-    z-index: -999;
-    left: -16px;
-    top: -4px;
+    z-index: -1;
+    left: -11px;
+    top: 0;
   }
 
   .advertisement-desktop {
