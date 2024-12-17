@@ -1,9 +1,8 @@
 /* advertisement */
 .advertisement {
-}
-.title {
   margin-bottom: 0px;
 }
+
 .advertisement-slogan {
   color: #fbfbfb;
   background-color: #576f35;
@@ -26,13 +25,26 @@
     min-height: 228px;
     font-size: 76px;
     line-height: 1;
+    position: relative;
   }
+
   .advertisement-slogan {
+    background-color: transparent;
     align-items: center;
-    min-width: 808px;
-    min-height: 84px;
-    padding-left: 16px;
   }
+  .advertisement-slogan::before {
+    content: '';
+    border-radius: 12px;
+    width: 808px;
+    height: 84px;
+    background-color: #576f35;
+    display: block;
+    position: absolute;
+    z-index: -999;
+    left: -16px;
+    top: -4px;
+  }
+
   .advertisement-desktop {
     display: block;
   }
