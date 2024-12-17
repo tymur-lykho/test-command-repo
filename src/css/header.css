@@ -1,15 +1,21 @@
 /* #region HEADER */
 
 .page-header {
-  position: relative;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+
   background-color: transparent;
+  /* background-color: #460202; */
 }
 
 .header-container {
   padding-top: 20px;
-  max-width: 335px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 @media only screen and (min-width: 768px) {
   .header-container {
@@ -28,8 +34,10 @@
 }
 @media only screen and (min-width: 1158px) {
   .nav-header {
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
 }
 
@@ -45,7 +53,6 @@
 @media only screen and (min-width: 1158px) {
   .header-logo {
     padding: 16px 0;
-    margin-right: 360px;
   }
 }
 
@@ -76,6 +83,8 @@
     display: flex;
     align-items: center;
     gap: 8px;
+  }
+  .lust-element {
     margin-right: 20px;
   }
   .nav-link-header {
@@ -90,11 +99,10 @@
     text-align: center;
     color: var(--color-white-text);
   }
-  .nav-link-btn {
+  .nav-link-shop {
     border-radius: 30px;
     padding: 16px 32px;
     min-width: 157px;
-    height: 52px;
     background-color: var(--color-primary-brand);
     font-weight: 600;
     font-size: 18px;
@@ -134,6 +142,13 @@
   width: 32px;
   height: 32px;
 }
+@media only screen and (min-width: 768px) {
+  .burger-btn {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 @media only screen and (min-width: 1158px) {
   .burger-btn {
     display: none;
