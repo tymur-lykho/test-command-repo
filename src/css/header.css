@@ -79,7 +79,7 @@
     margin-right: 20px;
   }
   .nav-link-header {
-    border: 1px solid #fbfbfb;
+    border: 1px solid var(--color-white-text);
     border-radius: 12px;
     padding: 12px;
     width: 83px;
@@ -88,41 +88,41 @@
     font-size: 16px;
     line-height: 125%;
     text-align: center;
-    color: #fbfbfb;
+    color: var(--color-white-text);
   }
   .nav-link-btn {
     border-radius: 30px;
     padding: 16px 32px;
     min-width: 157px;
     height: 52px;
-    background-color: var(--color-primary-brand: #7a3145);
+    background-color: var(--color-primary-brand);
     font-weight: 600;
     font-size: 18px;
     line-height: 111%;
     letter-spacing: -0.01em;
-    color: var(--color-white-text: #fbfbfb);
+    color: var(--color-white-text);
   }
   .nav-link-header:hover {
-    color: var(--color-primary-brand: #7a3145);
-    background-color: var(--color-accent: #d4bfc4);
-    border: 1px solid var(--color-accent: #d4bfc4);
+    color: var(--color-primary-brand);
+    background-color: var(--color-accent);
+    border: 1px solid var(--color-accent);
   }
 
   .nav-link-header:active {
-    color: var(--color-primary-brand: #7a3145);
-    background-color: var(--color-white-text: #fbfbfb);
-    border: 1px solid var(--color-white-text: #fbfbfb);
+    color: var(--color-primary-brand);
+    background-color: var(--color-white-text);
+    border: 1px solid var(--color-white-text);
   }
   .nav-link-btn:hover {
-    color: var(--color-primary-brand: #7a3145);
-    background-color: var(--color-accent: #d4bfc4);
-    border: 1px solid var(--color-accent: #d4bfc4);
+    color: var(--color-primary-brand);
+    background-color: var(--color-accent);
+    border: 1px solid var(--color-accent);
   }
 
   .nav-link-btn:active {
-    color: var(--color-primary-brand: #7a3145);
-    background-color: var(--color-white-text: #fbfbfb);
-    border: 1px solid var(--color-white-text: #fbfbfb);
+    color: var(--color-primary-brand);
+    background-color: var(--color-white-text);
+    border: 1px solid var(--color-white-text);
   }
 }
 
@@ -143,7 +143,7 @@
 .burger-icon {
   display: block;
   stroke-width: 3px;
-  stroke: #fbfbfb;
+  stroke: var(--color-white-text);
   fill: none;
   width: 32px;
   height: 32px;
