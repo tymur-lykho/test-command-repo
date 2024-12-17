@@ -3,7 +3,9 @@
 /* Styles for MOBILE */
 
 .header-container {
-  padding: 20px 0 0 0;
+  background-color: transparent;
+  padding-top: 20px;
+
   max-width: 335px;
   display: flex;
   align-items: center;
@@ -43,7 +45,111 @@
   stroke-width: 3px;
   stroke: #fbfbfb;
   fill: none;
+  width: 32px;
+  height: 32px;
 }
+/* #region MOBILE-TABLET MENU */
+.mobile-tablet-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #576f35;
+  /* background-color: var(--green); */
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-tablet-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.mobile-tablet-menu:not(.is-open).mobile-tablet-menu {
+  transform: translate(100%, 0%);
+}
+.container.tablet-menu-container {
+  padding-top: 296px;
+  padding-bottom: 52px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.tablet-menu-close {
+  position: absolute;
+  top: 28px;
+  right: 28px;
+  background-color: transparent;
+}
+.tablet-menu-icon {
+  stroke-width: 3px;
+  stroke: #fbfbfb;
+  width: 32px;
+  height: 32px;
+}
+
+.tablet-nav-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tablet-nav {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: auto;
+}
+
+.nav-mobile-link {
+  display: block;
+
+  border: 1px solid #fbfbfb;
+  border-radius: 12px;
+  padding: 12px 0;
+  width: 118px;
+  height: 44px;
+  white-space: nowrap;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  text-align: center;
+  color: #fbfbfb;
+}
+
+.nav-mobile-link:active,
+.nav-mob-tab-btn:active {
+  border: 1px solid #fbfbfb;
+  background-color: #fbfbfb;
+  color: #7a3145;
+}
+.nav-mob-tab-btn {
+  border-radius: 30px;
+  padding: 16px 41px;
+  width: 175px;
+  height: 52px;
+  background: #7a3145;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 111%;
+  letter-spacing: -0.01em;
+  color: #fbfbfb;
+}
+
+.mob-btn-nav {
+  display: flex;
+}
+
+/* #endregion */
+
 /* Styles for TABLET */
 @media only screen and (min-width: 768px) {
   .container.header-container {
@@ -60,6 +166,32 @@
   .burger-icon {
     width: 40;
     height: 40;
+  }
+  .mobile-tablet-menu {
+    /* додати правильний трансформ */
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .container.tablet-menu-container {
+    padding-top: 360px;
+    padding-bottom: 48px;
+  }
+
+  .tablet-menu-close {
+    width: 40px;
+    height: 40px;
+  }
+  .tablet-menu-icon {
+    stroke-width: 4px;
+    width: 40px;
+    height: 40px;
+  }
+  .nav-mobile-link {
+    font-size: 16px;
+    line-height: 125%;
+  }
+  .nav-mob-tab-btn {
+    width: 157px;
+    padding: 16px 32px;
   }
 }
 
@@ -83,9 +215,7 @@
     display: flex;
     align-items: center;
   }
-  .burger-btn {
-    display: none;
-  }
+
   .hed-nav {
     display: flex;
     align-items: center;
@@ -94,11 +224,10 @@
   }
 
   .nav-link-header {
-    position: relative;
-    display: block;
     border: 1px solid #fbfbfb;
     border-radius: 12px;
     padding: 12px;
+    width: 83px;
     height: 44px;
     font-weight: 500;
     font-size: 16px;
@@ -106,9 +235,7 @@
     text-align: center;
     color: #fbfbfb;
   }
-  .nav-item-btn {
-    display: block;
-  }
+
   .nav-link-btn {
     border-radius: 30px;
     padding: 16px 32px;
@@ -119,9 +246,7 @@
     font-size: 18px;
     line-height: 111%;
     letter-spacing: -0.01em;
-    text-transform: uppercase;
     color: #fbfbfb;
-    margin-left: 0 auto;
   }
   .nav-link-header:hover {
     color: #7a3145;
@@ -145,22 +270,12 @@
     background-color: #fbfbfb;
     border: 1px solid #fbfbfb;
   }
+  .burger-btn {
+    display: none;
+  }
+  .mobile-tablet-menu {
+    display: none;
+  }
 }
 
 /* #endregion */
-
-/* Стилізована кнопка Shop Now, якщо буде потрібна */
-
-/* .btn-header {
-  border-radius: 30px;
-  padding: 16px 32px;
-  min-width: 157px;
-  height: 52px;
-  background: #7a3145;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 111%;
-  letter-spacing: -0.01em;
-  text-transform: uppercase;
-  color: #fbfbfb;
-} */
