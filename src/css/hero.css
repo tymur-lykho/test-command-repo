@@ -20,6 +20,11 @@
     background-image: url(/img/hero/pic-mob@2x.jpg);
   }
 }
+@media screen and (max-width: 374px) {
+  .hero-container {
+    padding-bottom: 109%;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .hero-container {
@@ -51,14 +56,11 @@
 
 .hero-title {
   max-width: 335px;
-  font-size: 52px;
+  font-size: clamp(2.625rem, -1.011rem + 18.18vw, 3.25rem);
+
   line-height: 1;
 }
-@media screen and (max-width: 374px) {
-  .hero-title {
-    font-size: 42px;
-  }
-}
+
 @media screen and (min-width: 768px) {
   .hero-title {
     max-width: 704px;
@@ -75,7 +77,8 @@
 
 .hero-text {
   font-weight: 500;
-  font-size: 14px;
+  font-size: clamp(0.688rem, -0.403rem + 5.45vw, 0.875rem);
+
   line-height: 1.43;
   max-width: 335px;
 }
