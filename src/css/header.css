@@ -1,35 +1,131 @@
-/* Якщо треба буде додати медіа-правила для кожної позиції, що змінилася, я перероблю, але збільшиться кількість рядків набагато */
+/* #region HEADER */
 
-/* Styles for MOBILE */
+.page-header {
+  position: relative;
+  background-color: transparent;
+}
 
 .header-container {
-  padding: 20px 0 0 0;
+  padding-top: 20px;
   max-width: 335px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
+@media only screen and (min-width: 768px) {
+  .header-container {
+    padding-top: 32px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .header-container {
+    position: relative;
+  }
+}
+
 .nav-header {
   display: flex;
   align-items: center;
 }
-.page-header {
-  position: relative;
-  background-color: transparent;
-  margin: 0 auto;
+@media only screen and (min-width: 1158px) {
+  .nav-header {
+    display: flex;
+    align-items: center;
+  }
 }
+
 .header-logo {
   display: block;
   padding: 8px 0;
 }
+@media only screen and (min-width: 768px) {
+  .header-logo {
+    padding: 10px 0;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .header-logo {
+    padding: 16px 0;
+    margin-right: 360px;
+  }
+}
+
 .logo-icon {
   width: 168px;
   height: 16px;
   display: block;
 }
+@media only screen and (min-width: 768px) {
+  .logo-icon {
+    width: 216px;
+    height: 20px;
+  }
+}
+
 .nav-list {
   display: none;
 }
+@media only screen and (min-width: 1158px) {
+  .nav-list {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .hed-nav {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-right: 20px;
+  }
+  .nav-link-header {
+    border: 1px solid var(--color-white-text);
+    border-radius: 12px;
+    padding: 12px;
+    width: 83px;
+    height: 44px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 125%;
+    text-align: center;
+    color: var(--color-white-text);
+  }
+  .nav-link-btn {
+    border-radius: 30px;
+    padding: 16px 32px;
+    min-width: 157px;
+    height: 52px;
+    background-color: var(--color-primary-brand);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 111%;
+    letter-spacing: -0.01em;
+    color: var(--color-white-text);
+  }
+  .nav-link-header:hover {
+    color: var(--color-primary-brand);
+    background-color: var(--color-accent);
+    border: 1px solid var(--color-accent);
+  }
+
+  .nav-link-header:active {
+    color: var(--color-primary-brand);
+    background-color: var(--color-white-text);
+    border: 1px solid var(--color-white-text);
+  }
+  .nav-link-btn:hover {
+    color: var(--color-primary-brand);
+    background-color: var(--color-accent);
+    border: 1px solid var(--color-accent);
+  }
+
+  .nav-link-btn:active {
+    color: var(--color-primary-brand);
+    background-color: var(--color-white-text);
+    border: 1px solid var(--color-white-text);
+  }
+}
+
 .burger-btn {
   padding: 0;
   border: none;
@@ -38,129 +134,25 @@
   width: 32px;
   height: 32px;
 }
+@media only screen and (min-width: 1158px) {
+  .burger-btn {
+    display: none;
+  }
+}
+
 .burger-icon {
   display: block;
   stroke-width: 3px;
-  stroke: #fbfbfb;
+  stroke: var(--color-white-text);
   fill: none;
+  width: 32px;
+  height: 32px;
 }
-/* Styles for TABLET */
 @media only screen and (min-width: 768px) {
-  .container.header-container {
-    padding-top: 32px;
-  }
-  .header-logo {
-    padding: 10px 0;
-  }
-  .logo-icon {
-    width: 216px;
-    height: 20px;
-  }
-
   .burger-icon {
     width: 40;
     height: 40;
   }
 }
 
-/* Styles for DESCTOP */
-@media only screen and (min-width: 1158px) {
-  .header-container {
-    display: flex;
-    position: relative;
-  }
-
-  .nav-header {
-    display: flex;
-    align-items: center;
-  }
-  .header-logo {
-    padding: 16px 0;
-    margin-right: 360px;
-  }
-
-  .nav-list {
-    display: flex;
-    align-items: center;
-  }
-  .burger-btn {
-    display: none;
-  }
-  .hed-nav {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-right: 20px;
-  }
-
-  .nav-link-header {
-    position: relative;
-    display: block;
-    border: 1px solid #fbfbfb;
-    border-radius: 12px;
-    padding: 12px;
-    height: 44px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 125%;
-    text-align: center;
-    color: #fbfbfb;
-  }
-  .nav-item-btn {
-    display: block;
-  }
-  .nav-link-btn {
-    border-radius: 30px;
-    padding: 16px 32px;
-    min-width: 157px;
-    height: 52px;
-    background: #7a3145;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 111%;
-    letter-spacing: -0.01em;
-    text-transform: uppercase;
-    color: #fbfbfb;
-    margin-left: 0 auto;
-  }
-  .nav-link-header:hover {
-    color: #7a3145;
-    background-color: #d4bfc4;
-    border: 1px solid #d4bfc4;
-  }
-
-  .nav-link-header:active {
-    color: #7a3145;
-    background-color: #fbfbfb;
-    border: 1px solid #fbfbfb;
-  }
-  .nav-link-btn:hover {
-    color: #7a3145;
-    background-color: #d4bfc4;
-    border: 1px solid #d4bfc4;
-  }
-
-  .nav-link-btn:active {
-    color: #7a3145;
-    background-color: #fbfbfb;
-    border: 1px solid #fbfbfb;
-  }
-}
-
 /* #endregion */
-
-/* Стилізована кнопка Shop Now, якщо буде потрібна */
-
-/* .btn-header {
-  border-radius: 30px;
-  padding: 16px 32px;
-  min-width: 157px;
-  height: 52px;
-  background: #7a3145;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 111%;
-  letter-spacing: -0.01em;
-  text-transform: uppercase;
-  color: #fbfbfb;
-} */
