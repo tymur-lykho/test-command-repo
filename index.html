@@ -386,6 +386,7 @@
       </h3>
 
       <form name="contact_form" class="order-form">
+        <label for="user-name" class="visually-hidden">Name</label>
         <input
           type="text"
           id="user-name"
@@ -395,6 +396,7 @@
           pattern="^[A-Za-zА-Яа-яЁёІіЇїЄєҐґ']{2,25}( [A-Za-zА-Яа-яЁёІіЇїЄєҐґ']{2,25}){0,3}$"
           required
         />
+        <label for="user-email" class="visually-hidden">Email</label>
         <input
           type="email"
           id="user-email"
@@ -404,8 +406,9 @@
           pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,8}$"
           required
         />
+        <label for="user-comment" class="visually-hidden">Comment</label>
         <textarea
-          id="user_comment"
+          id="user-comment"
           name="user_comment"
           rows="10"
           placeholder="Comment"
@@ -433,7 +436,7 @@
         <img
           src="/project-DreamTeam-11/assets/pic-mob@1x-DDPmflLI.png"
           alt="Woman is making a fresh smoothie"
-          width="428"
+          width="536"
           height="352"
         />
       </picture>
