@@ -47,6 +47,11 @@ body {
 
   margin-bottom: 20px;
 }
+@media only screen and (max-width: 375px) {
+  .title {
+    font-size: clamp(2.875rem, 2.148rem + 3.64vw, 3rem);
+  }
+}
 /* Styles for title for vegetables, reviews and your order in Tablet/PC devices */
 @media only screen and (min-width: 768px) {
   .title {

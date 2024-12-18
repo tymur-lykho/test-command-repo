@@ -7,11 +7,6 @@
   max-width: 335px;
   color: var(--color-black-text);
 }
-@media only screen and (max-width: 375px) {
-  .reviews-js-title {
-    font-size: clamp(2.875rem, 2.148rem + 3.64vw, 3rem);
-  }
-}
 @media only screen and (min-width: 768px) {
   .reviews-js-title {
     max-width: 553px;
