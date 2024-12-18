@@ -1,6 +1,6 @@
 .footer {
   padding: 40px 0px;
-  background-color: #7a3145;
+  background-color: var(--color-primary-brand);
 }
 @media only screen and (min-width: 768px) {
   .footer {
@@ -42,7 +42,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 1.43;
-  color: #fbfbfb;
+  color: var(--color-white-text);
 }
 @media only screen and (min-width: 768px) {
   .footer-text {
@@ -78,7 +78,7 @@
   line-height: 1;
   letter-spacing: -0.01em;
   text-transform: uppercase;
-  color: #fbfbfb;
+  color: var(--color-white-text);
 }
 .footer-nav-item:not(:last-child) {
   margin-bottom: 14px;
@@ -95,7 +95,7 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.43;
-  color: #fbfbfb;
+  color: var(--color-white-text);
 }
 @media only screen and (min-width: 768px) {
   .footer-address {
@@ -115,7 +115,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 1.43;
-  color: #d4bfc4;
+  color: var(--color-accent);
   gap: 16px;
 }
 @media only screen and (min-width: 768px) {
