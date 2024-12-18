@@ -1,0 +1,239 @@
+
+/* #region works-container */
+/* Styles for Mobile devices */
+.works-container {
+  display: flex;
+  flex-direction: column;
+}
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1280px) {
+.works-container {
+  flex-direction: row; 
+}
+}
+/* #endregion */ 
+
+/* #region visually-hidden */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  white-space: nowrap;
+}
+/* #endregion */ 
+
+/* #region works-wrapper */
+/* Styles for Mobile devices */
+.works-wrapper {
+  background: #7a3145;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  padding: 40px 20px;
+}
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+.works-wrapper{
+  padding: 100px 64px;
+}
+}
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1280px) {
+.works-wrapper {
+width: 50%;
+padding: 100px;
+}
+}
+/* #endregion */ 
+
+/* #region works-img */
+.works-img {
+  border-radius: 30px;
+}
+/* #endregion */
+
+/* #region works-box */
+/* Styles for Mobile devices */
+.works-box {
+  background: #576f35;
+  padding: 80px 20px;
+  width: 335px;
+  flex-direction: column;
+  display: flex;
+justify-content: center; 
+}
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+.works-box {
+  padding: 100px 164px;
+  width: 440px;
+}
+}
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1280px) {
+.works-box {
+  width: 50%;
+  padding: 100px 100px 160px 100px;
+
+}
+}
+/* #endregion */ 
+
+/* #region works-title  */
+/* Styles for Mobile devices */
+.works-title  {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+}
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+.works-title  {
+font-size: 32px;
+margin-bottom: 24px;
+}
+}
+/* #endregion */ 
+
+/* #region works-span  */
+/* Styles for Mobile devices */
+.works-span {
+  color: #d4bfc4;
+}
+/* #endregion */
+
+/* #region works-paragraf */
+/* Styles for Mobile devices */
+.works-paragraf {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #fbfbfb;
+  margin-bottom: 40px;
+}
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+.works-paragraf {
+font-size: 16px;
+line-height: 1.25;
+margin-bottom: 52px;
+}
+}
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1280px) {
+.works-paragraf {
+  margin-bottom: 104px;
+}
+}
+/* #endregion */ 
+
+/* #region works-list */
+.works-list {
+  counter-reset: step-counter; 
+}
+
+/* #endregion */ 
+
+/* #region works-item */
+/* Styles for Mobile devices */
+.works-item {
+  border-radius: 15px;
+  padding: 12px 27px 12px 24px;
+  background: #fbfbfb;
+  position: relative; 
+display: flex;
+width: 100%;
+align-items: center;
+}
+.works-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+
+.works-item::before{
+  background-color: #7a3145; 
+  width: 42px;
+  height: 42px;
+  content: counter(step-counter);
+  counter-increment: step-counter; 
+  position: absolute;
+  left: 5px; 
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff; 
+  font-weight: 600;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%; 
+  z-index: 1; 
+  border-radius: 100%;
+  margin-left: 24px;
+}
+
+.works-item::after{
+  content: "";
+  position: absolute;
+  left: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 52px;
+  height: 52px;
+  background-color: #D4BFC4;
+  border-radius: 50%;
+  z-index: 0; 
+ 
+}
+
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+.works-item {
+  width: 440px;
+  min-height: 76px;
+}
+}
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1280px) {
+.works-item {
+}
+}
+/* #endregion */ 
+
+/* #region works-item-text */
+/* Styles for Mobile devices */
+.works-item-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 143%;
+  color: #858585;
+  margin-left: 100px;
+}
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+.works-item-text {
+  line-height: 125%;
+}
+}
+
+/* #endregion */ 
+
+/* #region bold-accent */
+.bold-accent {
+  font-weight: 700;
+  color: #141414;
+}
+
+/* #endregion */ 
+
+
+
