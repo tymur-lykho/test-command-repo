@@ -98,6 +98,7 @@
     text-transform: capitalize;
     color: var(--color-white-text);
   }
+
   .nav-link-shop {
     border-radius: 30px;
     padding: 16px 32px;
@@ -163,4 +164,4 @@
   fill: none;
 }
 
-/* #endregion */
+/* #endregion HEADER*/
