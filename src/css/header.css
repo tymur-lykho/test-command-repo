@@ -21,7 +21,7 @@
     padding-top: 32px;
   }
 }
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 1280px) {
   .header-container {
     position: relative;
   }
@@ -31,7 +31,7 @@
   display: flex;
   align-items: center;
 }
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 1280px) {
   .nav-header {
     width: 100%;
     display: flex;
@@ -49,7 +49,7 @@
     padding: 10px 0;
   }
 }
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 1280px) {
   .header-logo {
     padding: 16px 0;
   }
@@ -70,19 +70,19 @@
 .nav-list {
   display: none;
 }
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 1280px) {
   .nav-list {
     display: flex;
     align-items: center;
+    gap: 24px;
   }
 }
 
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 1280px) {
   .hed-nav {
     display: flex;
     align-items: center;
     gap: 8px;
-    margin-right: 20px;
   }
 
   .nav-link-header {
@@ -100,16 +100,11 @@
   }
 
   .nav-link-shop {
-    border-radius: 30px;
     padding: 16px 32px;
-    background-color: var(--color-primary-brand);
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 1.11;
-    letter-spacing: -0.01em;
-    text-transform: uppercase;
+
     color: var(--color-white-text);
   }
+
   .nav-link-header:hover {
     color: var(--color-primary-brand);
     background-color: var(--color-accent);
@@ -151,7 +146,7 @@
   }
 }
 
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 1280px) {
   .burger-btn {
     display: none;
   }
