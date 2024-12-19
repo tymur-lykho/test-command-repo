@@ -4,7 +4,7 @@
 }
 
 .footer-logo {
-  max-width: 168px;
+  width: 168px;
   height: 16px;
 }
 
@@ -13,7 +13,8 @@
     padding: 32px 0;
   }
   .footer-logo {
-    fill: ;
+    width: 216px;
+    height: 20px;
   }
 }
 @media only screen and (min-width: 1280px) {
