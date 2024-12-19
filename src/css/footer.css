@@ -3,17 +3,9 @@
   background-color: var(--color-primary-brand);
 }
 
-.footer-logo {
-  max-width: 168px;
-  height: 16px;
-}
-
 @media only screen and (min-width: 768px) {
   .footer {
     padding: 32px 0;
-  }
-  .footer-logo {
-    fill: ;
   }
 }
 @media only screen and (min-width: 1280px) {
@@ -38,13 +30,34 @@
   margin-bottom: 40px;
   max-width: 265px;
 }
-.footer-logo {
+@media only screen and (min-width: 768px) {
+  .footer-logo-text {
+    margin-bottom: 0;
+  }
+}
+.footer-logo-link {
+  display: block;
+  max-width: 168px;
+  max-height: 16px;
+
   margin-bottom: 14px;
+}
+@media only screen and (min-width: 768px) {
+  .footer-logo-link {
+    max-width: 216px;
+    max-height: 20px;
+
+    margin-bottom: 24px;
+  }
+}
+.footer-logo {
+  width: 168px;
+  height: 16px;
 }
 @media only screen and (min-width: 768px) {
   .footer-logo {
     width: 216px;
-    margin-bottom: 24px;
+    height: 20px;
   }
 }
 .footer-text {
@@ -79,6 +92,11 @@
 @media only screen and (min-width: 768px) {
   .footer-nav-list {
     margin-bottom: 64px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .footer-nav-list {
+    margin-bottom: 0;
   }
 }
 .footer-nav-item {
@@ -145,7 +163,6 @@
   content: '/';
   margin: 0 8px;
 }
-
 .footer-policy-item:last-child::after {
   display: none;
 }
