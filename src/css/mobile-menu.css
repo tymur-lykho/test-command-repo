@@ -10,7 +10,7 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  background-color: rgba(20, 20, 20, 0.4);
+  background-color: var(--color-transparent-black);
 
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -30,7 +30,8 @@
 
 .mobile-menu-container {
   position: fixed;
-  padding-top: 296px;
+  padding: 0 20px;
+  padding-top: 20px;
   padding-bottom: 52px;
   align-items: center;
 
@@ -39,13 +40,14 @@
   justify-content: space-between;
   width: 100%;
   height: 100%;
-  background-color: #576f35;
+  background-color: var(--color-green-background);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 768px) {
   .mobile-menu-container {
-    padding-top: 360px;
+    padding: 0px 32px;
+    padding-top: 32px;
     padding-bottom: 48px;
     width: 45%;
     right: 0;
@@ -57,28 +59,18 @@
 }
 
 .mobile-btn-close {
-  position: absolute;
-  top: 20px;
-  right: 20px;
   padding: 0;
-
   display: flex;
   justify-content: center;
   align-items: center;
+  align-self: flex-end;
 
   background-color: transparent;
 }
 
-@media screen and (min-width: 768px) {
-  .mobile-btn-close {
-    top: 32px;
-    right: 32px;
-  }
-}
-
 .mobile-close-icon {
   stroke-width: 3px;
-  stroke: #fbfbfb;
+  stroke: var(--color-white-text);
   width: 32px;
   height: 32px;
 }
@@ -106,10 +98,10 @@
   text-align: center;
   align-items: center;
 
-  color: #fbfbfb;
+  color: var(--color-white-text);
   background-color: transparent;
 
-  border: 1px solid #fbfbfb;
+  border: 1px solid var(--color-white-text);
   border-radius: 12px;
 
   width: 118px;
@@ -131,8 +123,8 @@
 }
 
 .mobile-nav-link:active {
-  color: #7a3145;
-  background-color: #fbfbfb;
+  color: var(--color-primary-brand);
+  background-color: var(--color-white-text);
 }
 
 .mobile-shop-link {
@@ -144,7 +136,7 @@
   text-align: center;
   text-transform: uppercase;
 
-  color: #fbfbfb;
+  color: var(--color-white-text);
   background-color: #7a3145;
   border: none;
   border-radius: 30px;
@@ -168,6 +160,6 @@
 }
 
 .mobile-shop-link:active {
-  color: #7a3145;
-  background-color: #fbfbfb;
+  color: var(--color-primary-brand);
+  background-color: var(--color-white-text);
 }
